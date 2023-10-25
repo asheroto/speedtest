@@ -17,7 +17,7 @@ This is a simple PowerShell script that will run the [Speedtest.net CLI](https:/
 
 ## Usage
 
-Simply run this command with PowerShell. The URL [asheroto.com/speedtest](https://asheroto.com/speedtest) always points to the [latest version](https://raw.githubusercontent.com/asheroto/speedtest/main/speedtest.ps1) of the script.
+Simply run this command with PowerShell. The URL [asheroto.com/speedtest](https://asheroto.com/speedtest) always redirects to the [latest code-signed release](https://github.com/asheroto/speedtest/releases/latest/download/speedtest.ps1) of the script.
 
 ```powershell
 irm asheroto.com/speedtest | iex
