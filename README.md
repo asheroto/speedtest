@@ -5,7 +5,7 @@
 
 # Quickly run Speedtest.net test from the command line
 
-This is a simple PowerShell script that will run the [Speedtest.net CLI](https://www.speedtest.net/apps/cli) program from the command line. No need to browse to a website or unzip files, it does it all for you. Arguments are passed through to the CLI, so you can use it as you normally would.
+This is a simple PowerShell script that will run the [Speedtest.net CLI](https://www.speedtest.net/apps/cli) program from the command line. No need to browse to a website or unzip files, it does it all for you. Arguments are passed through to the CLI, so you arguments as you normally would.
 
 ## How it works
 
