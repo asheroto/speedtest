@@ -19,7 +19,10 @@ This PowerShell script runs Speedtest.net's [Speedtest CLI](https://www.speedtes
 
 ## Usage
 
-Simply run this command with PowerShell. The URL [asheroto.com/speedtest](https://asheroto.com/speedtest) always redirects to the [latest code-signed release](https://github.com/asheroto/speedtest/releases/latest/download/speedtest.ps1) of the script.
+The URL [asheroto.com/speedtest](https://asheroto.com/speedtest) always redirects to the [latest code-signed release](https://github.com/asheroto/speedtest/releases/latest/download/speedtest.ps1) of the script.
+
+### PowerShell
+Simply run this command with **PowerShell**.
 
 ```powershell
 irm asheroto.com/speedtest | iex
@@ -35,6 +38,20 @@ Or if you download the latest version, you can run it like this:
 
 ```powershell
 .\speedtest.ps1 --servers
+```
+
+### Command Prompt
+
+You can also run this command with **Command Prompt** by having it run PowerShell.
+
+```bat
+powershell -c "irm asheroto.com/speedtest | iex"
+```
+
+Due to the nature of how PowerShell works, passing arguments to the script is a bit harder. To do it as a one-line command, you can run this:
+
+```bat
+powershell -c "iex ""& { $(iwr asheroto.com/speedtest) } --servers"""
 ```
 
 ## Parameters
