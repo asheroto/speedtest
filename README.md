@@ -37,7 +37,7 @@ iex "& { $(iwr asheroto.com/speedtest) } --servers"
 Or if you download the latest version, you can run it like this:
 
 ```powershell
-.\speedtest.ps1 --servers
+.\speedtest.ps1
 ```
 
 ### Command Prompt
@@ -52,6 +52,12 @@ Due to the nature of how PowerShell works, passing arguments to the script is a 
 
 ```bat
 powershell -c "iex ""& { $(iwr asheroto.com/speedtest) } --servers"""
+```
+
+Or if you download the latest version, you can run it like this:
+
+```bat
+powershell -c ".\speedtest.ps1"
 ```
 
 ## Parameters
