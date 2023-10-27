@@ -10,4 +10,4 @@ The following versions are currently supported.
 
 ## Reporting a Vulnerability
 
-If you find a security issue, please create a [security advisory](https://github.com/asheroto/speedtest/security/advisories).
+If you find a security/vulnerability/privacy issue, please e-mail speedtest [at] asheroto [dot] com.
