@@ -1,6 +1,6 @@
 <#PSScriptInfo
 
-.VERSION 0.0.1
+.VERSION 0.0.2
 
 .GUID a4af5e07-d626-4b97-b4d6-eef7265d1f7c
 
@@ -14,6 +14,7 @@
 
 .RELEASENOTES
 [Version 0.0.1] - Initial Release.
+[Version 0.0.2] - Added UseBasicParsing parameter to Invoke-WebRequest commands to fix issue with certain systems.
 
 #>
 
@@ -31,7 +32,7 @@ Designed to use with short URL to make it easy to remember.
 .PARAMETER Help
     Displays the full help information for the script.
 .NOTES
-	Version      : 0.0.1
+	Version      : 0.0.2
 	Created by   : asheroto
 .LINK
 	Project Site: https://github.com/asheroto/speedtest
@@ -42,7 +43,7 @@ param (
 )
 
 # Version
-$CurrentVersion = '0.0.1'
+$CurrentVersion = '0.0.2'
 $RepoOwner = 'asheroto'
 $RepoName = 'speedtest'
 $PowerShellGalleryName = 'speedtest'
@@ -76,7 +77,7 @@ if ($PSBoundParameters.ContainsKey('Verbose') -and $PSBoundParameters['Verbose']
 # Scrape the webpage to get the download link
 function Get-SpeedTestDownloadLink {
     $url = "https://www.speedtest.net/apps/cli"
-    $webContent = Invoke-WebRequest -Uri $url
+    $webContent = Invoke-WebRequest -Uri $url -UseBasicParsing
     if ($webContent.Content -match 'href="(https://install\.speedtest\.net/app/cli/ookla-speedtest-[\d\.]+-win64\.zip)"') {
         return $matches[1]
     } else {
@@ -91,7 +92,7 @@ function Download-SpeedTestZip {
         [string]$downloadLink,
         [string]$destination
     )
-    Invoke-WebRequest -Uri $downloadLink -OutFile $destination
+    Invoke-WebRequest -Uri $downloadLink -OutFile $destination -UseBasicParsing
 }
 
 # Extract the zip file
