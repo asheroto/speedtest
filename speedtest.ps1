@@ -1,6 +1,6 @@
 <#PSScriptInfo
 
-.VERSION 0.0.2
+.VERSION 0.0.3
 
 .GUID a4af5e07-d626-4b97-b4d6-eef7265d1f7c
 
@@ -15,6 +15,7 @@
 .RELEASENOTES
 [Version 0.0.1] - Initial Release.
 [Version 0.0.2] - Added UseBasicParsing parameter to Invoke-WebRequest commands to fix issue with certain systems.
+[Version 0.0.3] - Adjusted to work with GDPR acceptance.
 
 #>
 
@@ -32,7 +33,7 @@ Designed to use with short URL to make it easy to remember.
 .PARAMETER Help
     Displays the full help information for the script.
 .NOTES
-	Version      : 0.0.2
+	Version      : 0.0.3
 	Created by   : asheroto
 .LINK
 	Project Site: https://github.com/asheroto/speedtest
@@ -43,7 +44,7 @@ param (
 )
 
 # Version
-$CurrentVersion = '0.0.2'
+$CurrentVersion = '0.0.3'
 $RepoOwner = 'asheroto'
 $RepoName = 'speedtest'
 $PowerShellGalleryName = 'speedtest'
@@ -115,6 +116,11 @@ function Run-SpeedTest {
     # Check if '--accept-license' is already in arguments
     if (-not ($arguments -contains "--accept-license")) {
         $arguments += "--accept-license"
+    }
+
+    # Check if '--accept-gdpr' is already in arguments
+    if (-not ($arguments -contains "--accept-gdpr")) {
+        $arguments += "--accept-gdpr"
     }
 
     & $executablePath $arguments

@@ -7,7 +7,7 @@
 
 This PowerShell script runs Speedtest.net's [Speedtest CLI](https://www.speedtest.net/apps/cli) from the command line. No need to browse to a website or unzip files, it does it all for you. Arguments are passed through to the CLI, so you arguments as you normally would.
 
-> **Note:** This package is not affiliated with Ookla or Speedtest.net. It is simply a wrapper around their CLI.
+> **Note:** Please note this package nor its author are affiliate with Ookla or Speedtest.net. It is simply a wrapper around their CLI.
 
 ## How it works
 
@@ -21,7 +21,40 @@ This PowerShell script runs Speedtest.net's [Speedtest CLI](https://www.speedtes
 
 The URL [asheroto.com/speedtest](https://asheroto.com/speedtest) always redirects to the [latest code-signed release](https://github.com/asheroto/speedtest/releases/latest/download/speedtest.ps1) of the script.
 
+## License Information
+
+> [!WARNING]  
+> Your use of this script constitutes acceptance of EULA, Terms of Use, and the Privacy Policy. The script will automatically accept these on your behalf via CLI using `--accept-license` and `--accept-gdpr`. Please do not use the script if you do not agree.
+
+License information is available by running the `speedtest.exe` without any arguments (not this script but the actual executable). Text may not appear for users in the United States.
+
+```
+You may only use this Speedtest software and information generated
+from it for personal, non-commercial use, through a command line
+interface on a personal computer. Your use of this software is subject
+to the End User License Agreement, Terms of Use and Privacy Policy at
+these URLs:
+
+https://www.speedtest.net/about/eula
+https://www.speedtest.net/about/terms
+https://www.speedtest.net/about/privacy
+
+Ookla collects certain data through Speedtest that may be considered
+personally identifiable, such as your IP address, unique device
+identifiers or location. Ookla believes it has a legitimate interest
+to share this data with internet providers, hardware manufacturers and
+industry regulators to help them understand and create a better and
+faster internet. For further information including how the data may be
+shared, where the data may be transferred and Ookla's contact details,
+please see our Privacy Policy at:
+
+http://www.speedtest.net/privacy
+```
+
+Please note this package nor its author are affiliate with Ookla or Speedtest.net. It is simply a wrapper around their CLI.
+
 ### PowerShell
+
 Simply run this command with **PowerShell**.
 
 ```powershell
