@@ -17,10 +17,6 @@ This PowerShell script runs Speedtest.net's [Speedtest CLI](https://www.speedtes
 -   Runs the speedtest.exe file
 -   Cleans up the files
 
-## Usage
-
-The URL [asheroto.com/speedtest](https://asheroto.com/speedtest) always redirects to the [latest code-signed release](https://github.com/asheroto/speedtest/releases/latest/download/speedtest.ps1) of the script.
-
 ## License Information
 
 > [!WARNING]  
@@ -52,6 +48,10 @@ http://www.speedtest.net/privacy
 ```
 
 Please note this package nor its author are affiliate with Ookla or Speedtest.net. It is simply a wrapper around their CLI.
+
+## Usage
+
+The URL [asheroto.com/speedtest](https://asheroto.com/speedtest) always redirects to the [latest code-signed release](https://github.com/asheroto/speedtest/releases/latest/download/speedtest.ps1) of the script.
 
 ### PowerShell
 
