@@ -7,7 +7,8 @@
 
 This PowerShell script runs Speedtest.net's [Speedtest CLI](https://www.speedtest.net/apps/cli) from the command line. No need to browse to a website or unzip files, it does it all for you. Arguments are passed through to the CLI, so you arguments as you normally would.
 
-> **Note:** Please note this package nor its author are affiliate with Ookla or Speedtest.net. It is simply a wrapper around their CLI.
+> [!NOTE]
+> This package nor its author are affiliate with Ookla or Speedtest.net. It is simply a wrapper around their CLI.
 
 ## How it works
 
